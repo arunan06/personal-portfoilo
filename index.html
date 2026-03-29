@@ -1,115 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {font-family: Arial, sans-serif; margin: 0; padding: 0;}
+        section {padding: 60px 0;}
+        .smooth-scroll {scroll-behavior: smooth;}
+        .skills, .testimonials {margin: 20px 0;}
+    </style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div>
-        <h1 class="site-name">ArunCodes</h1>
-        <p class="tagline">Student Developer | Python | Web Development
-Learning, building, and sharing code.</p>
-      </div>
-      <nav class="site-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
-        ☰
-      </button>
-    </div>
-    <div class="mobile-nav" id="mobileNav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-content">
-        <h2>Hi, I’m Arunan</h2>
-        <p>A high school student and aspiring developer passionate about Python, web development, and open-source projects.</p>
-        <a class="btn-primary" href="#projects">View Projects</a>
-      </div>
+<body class="smooth-scroll">
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This section contains information about my background and experiences.</p>
     </section>
-
-    <section id="about" class="section about-section">
-      <div class="container about-grid">
-        <div>
-          <h3>About Me</h3>
-          <p>
-           Hi, I'm Arunan 👋
-A high school student and aspiring developer passionate about Python, web development, and open-source projects.
-I enjoy building small tools, solving programming problems, and learning new technologies.
-          </p>
-          <p>
-            Currently, I'm improving my skills in Python, HTML, CSS, and Git/GitHub, and working on projects to contribute to open source and participate in programs like Google Summer of Code.
-          </p>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
         </div>
-        <div class="profile-card">
-          <div class="profile-image">Photo</div>
-          <p class="profile-caption">Profile picture placeholder</p>
-        </div>
-      </div>
     </section>
-
-    <section id="projects" class="section projects-section">
-      <div class="container">
-        <h3>Projects</h3>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h4>Python quizGame</h4>
-            <p>This mini-project is a fun and interactive quiz game built using Python. The game presents a series of questions to the player, who must choose the correct answer from multiple options. It tests the player’s knowledge on various topics while providing an engaging experience.</p>
-            <a class="btn-secondary" href="https://github.com/arunan06/python-mini-projects/blob/main/quiz_game.py" target="_blank">View Project</a>
-          </article>
-          <article class="project-card">
-            <h4>Math Dash – Fast Math Challenge Game</h4>
-            <p>The game tests the player's ability to quickly solve arithmetic problems under time pressure. It helps improve mental math skills while making learning fun and interactive.</p>
-            <a class="btn-secondary" href="https://github.com/arunan06/math_dash" target="_blank">View Project</a>
-          </article>
-          <article class="project-card">
-            <h4>Math Puzzle Game</h4>
-            <p>Players solve different math puzzles and progress through increasingly difficult levels.</p>
-            <a class="btn-secondary" href="https://github.com/arunan06/math-puzzle-app" target="_blank">View Project</a>
-          </article>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <blockquote>
+                <p>"Arunan did an excellent job on our project! Highly recommend!" - Client A</p>
+            </blockquote>
+            <blockquote>
+                <p>"Professional and dedicated, a pleasure to work with!" - Client B</p>
+            </blockquote>
         </div>
-      </div>
     </section>
-
-    <section id="contact" class="section links-section">
-      <div class="container">
-        <h3>Links</h3>
-        <div class="links-grid">
-          <a class="social-link" href="https://github.com/arunan06" target="_blank" rel="noopener">
-            <span class="icon">🐱</span> GitHub
-          </a>
-          <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-            <span class="icon">💼</span> LinkedIn
-          </a>
-          <a class="social-link" href="https://www.kaggle.com/arunsmart0006" target="_blank" rel="noopener">
-            <span class="icon">📊</span> Kaggle
-          </a>
-          <a class="social-link" href="https://leetcode.com/arun_0006" target="_blank" rel="noopener">
-            <span class="icon">🧩</span> LeetCode
-          </a>
-        </div>
-      </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>This section will have my contact information.</p>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Arunan. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2026 Arunan06.</p>
+    </footer>
 </body>
 </html>
